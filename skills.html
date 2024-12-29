@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shane's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>SKILLS</h2>
+      <nav class="navigation">
+        <a class="nav_btn" href="index.html">
+          <div class="icon"><i class="uil uil-estate"></i></div>
+          <span>HOME</span>
+        </a>
+
+        <a class="nav_btn" href="about.html">
+          <div class="icon"><i class="uil uil-user-circle"></i></div>
+          <span>ABOUT ME</span>
+        </a>
+
+        <a class="nav_btn" href="projects.html">
+          <div class="icon"><i class="uil uil-window"></i></div>
+          <span>PROJECTS</span>
+        </a>
+
+        <a
+          class="nav_btn"
+          href="https://moiravalentina.github.io/mantua_shanedelmoira_s.__BSIT-1A/fb.html"
+          target="_blank"
+        >
+          <div class="icon"><i class="uil uil-clipboard-notes"></i></div>
+          <span>JOURNAL</span>
+        </a>
+
+        <a class="nav_btn" href="contact.html">
+          <div class="icon"><i class="uil uil-envelope-edit"></i></div>
+          <span>CONTACT</span>
+        </a>
+      </nav>
+    </header>
+
+    <section class="rotating" id="main">
+      <div class="container2">
+        <div class="box">
+          <div style="--i: 1" class="mbox">
+            <img src="image/s1.png" class="mainimg" />
+            <div class="contentbx">
+              <h4>PROGRAMMING</h4>
+              <p>
+                I have experience with HTML, CSS, JavaScript, Python, and C. I
+                try to improve my skills by practicing coding and learning new
+                techniques.
+              </p>
+            </div>
+          </div>
+          <div style="--i: 2" class="mbox">
+            <img src="image/s2.png" class="mainimg" />
+            <div class="contentbx">
+              <h4>DESIGNING</h4>
+              <p>
+                I design simple but functional websites and SaaS platforms. I
+                focus on creating user-friendly designs that look nice and work
+                well.
+              </p>
+            </div>
+          </div>
+          <div style="--i: 3" class="mbox">
+            <img src="image/s3.png" class="mainimg" />
+            <div class="contentbx">
+              <h4>PROBLEM SOLVING</h4>
+              <p>
+                I like figuring out solutions to problems, whether it’s fixing
+                code or coming up with better ways to do things.
+              </p>
+            </div>
+          </div>
+          <div style="--i: 4" class="mbox">
+            <img src="image/s4.png" class="mainimg" />
+            <div class="contentbx">
+              <h4>FOCUS</h4>
+              <p>
+                I stay focused on my tasks and do my best to finish them with
+                accuracy and on time.
+              </p>
+            </div>
+          </div>
+          <div style="--i: 5" class="mbox">
+            <img src="image/s5.jpg" class="mainimg" />
+            <div class="contentbx">
+              <h4>DISCIPLINE</h4>
+              <p>
+                I am consistent and committed to my work, making sure I do my
+                best every time.
+              </p>
+            </div>
+          </div>
+          <div style="--i: 6" class="mbox">
+            <img src="image/s6.jpg" class="mainimg" />
+            <div class="contentbx">
+              <h4>Hello World</h4>
+              <p>These are the skills I’m proud to develop and grow.</p>
+              <p>Click the arrows to explore each skill one by one.</p>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <div class="neon-button rotate_prev">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="uil uil-angle-right-b"></i>
+          </div>
+          <div class="neon-button rotate_next">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="uil uil-angle-right-b"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      let rotate_prev = document.querySelector(".rotate_prev");
+      let rotate_next = document.querySelector(".rotate_next");
+      let box = document.querySelector(".box");
+
+      let degrees = 0;
+
+      rotate_prev.addEventListener("click", function () {
+        degrees += 60;
+        box.style = `transform: perspective(1000px) rotateY(${degrees}deg);`;
+      });
+
+      rotate_next.addEventListener("click", function () {
+        degrees -= 60;
+        box.style = `transform: perspective(1000px) rotateY(${degrees}deg);`;
+      });
+    </script>
+  </body>
+</html>
